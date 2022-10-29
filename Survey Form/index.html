@@ -1,0 +1,176 @@
+<div class="container">
+  <header class="header">
+    <h1 id="title" class="text-center">Robotics Interview Form</h1>
+    <p id="description" class="description text-center">
+      Fill out the form in order to participate in interview.
+    </p>
+  </header>
+  <form id="survey-form">
+    <div class="form-group">
+      <label id="name-label" for="name">Name</label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        class="form-control"
+        placeholder="Enter your name"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label id="email-label" for="email">Email</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        class="form-control"
+        placeholder="Enter your Email"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label id="number-label" for="number"
+        >Age<span class="clue">(optional)</span></label
+      >
+      <input
+        type="number"
+        name="age"
+        id="number"
+        min="18"
+        max="23"
+        class="form-control"
+        placeholder="Age"
+      />
+    </div>
+    <div class="form-group">
+      <p>Which Year are you currently studying?</p>
+      <select id="dropdown" name="year" class="form-control" required>
+        <option disabled selected value>Select current year</option>
+        <option value="first">First Year</option>
+        <option value="secondr">Second Year</option>
+        <option value="third">Third Year</option>
+        <option value="fourth">Fourth Year</option>
+      </select>
+    </div>
+    
+    <div class="form-group">
+      <p>Are you a Hostler or Non-Hostler?</p>
+      <label>
+        <input
+          name="user-recommend"
+          value="hostler"
+          type="radio"
+          class="input-radio"
+        />Hostler</label
+      >
+      <label>
+        <input
+          name="user-recommend"
+          value="non-hostler"
+          type="radio"
+          class="input-radio"
+        />Non-Hostler</label
+      >
+    </div>
+    
+     <div class="form-group">
+      <p>
+        What do you most like about CodeVision?
+      </p>
+      <select id="most-like" name="mostLike" class="form-control" required>
+        <option disabled selected value>Select an option</option>
+        <option value="workshops">Workshops</option>
+        <option value="consoles">Consoles</option>
+        <option value="seminar">Seminar</option>
+        <option 
+value="projects">Projects</option>
+      </select>
+    </div>
+    
+    <div class="form-group">
+      <p>
+        What is you hobby or interest?
+        <span class="clue">(Check all that apply)</span>
+      </p>
+
+      <label
+        ><input
+          name="prefer"
+          value="front-end-projects"
+          type="checkbox"
+          class="input-checkbox"
+        />Front-end Projects</label
+        >
+      <label>
+        <input
+          name="prefer"
+          value="back-end-projects"
+          type="checkbox"
+          class="input-checkbox"
+        />Back-end Projects</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="android-development"
+          type="checkbox"
+          class="input-checkbox"
+        />Android Development</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="video-editing"
+          type="checkbox"
+          class="input-checkbox"
+        />Video Editing</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="web-developer"
+          type="checkbox"
+          class="input-checkbox"
+        />Web Developer</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="content-creator"
+          type="checkbox"
+          class="input-checkbox"
+        />Content Creator</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="wiki-manager"
+          type="checkbox"
+          class="input-checkbox"
+        />Wiki Manager</label
+        >
+      <label
+        ><input
+          name="prefer"
+          value="coding-in-a-specifc-language"
+          type="checkbox"
+          class="input-checkbox"
+        />Coding in a Specifc Language</label>
+    </div>
+ <div class="form-group">
+      <p>Anything more about you?(Simple Bio)</p>
+      <textarea
+        id="comments"
+        class="input-textarea"
+        name="comment"
+        placeholder="Enter your bio here..."
+      ></textarea>
+    </div>
+
+<div class="form-group">
+      <button type="submit" id="submit" class="submit-button">
+        Submit
+      </button>
+    </div>
+  </form>
+</div>
